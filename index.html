@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rock Paper Scissors V2</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  <main id="container">
+    <div id="header">
+      <h3 class="">Rock Paper Scissors</h3>
+    </div>
+    <div id="userRegister">
+      <div id="userEnter">
+        <input type="text" name="" id="username" placeholder="Enter your name to begin..">
+        <button id="userSubmit" class="">Register!</button>
+      </div>
+      <div id="userReady" class="hidden">
+        <p id="welcomeMessage" class="flow-text"></hp>
+        <div>
+          <hr>
+        </div>
+        
+      </div>
+    </div>
+    <div id="area2" class="hidden">
+
+      <div id="userSelections" class="hidden">
+        <img src="./images/rock.png" alt="rock icon" id="rock" class="hoverable">
+        <img src="./images/stationery.png" alt="paper icon" id="paper" class="hoverable">
+        <img src="./images/scissors.png" alt="scissors icon" id="scissors" class="hoverable">
+      </div>
+
+      <div id="matchStart">
+        <button id="start" class="hidden">Start Match</button>
+      </div>
+      <div id="resultsArea" class="hidden">
+        <div id="compTitle">Computer Chooses:</div>
+        <div id="three"><h1>3</h1></div>
+        <div id="two"><h1>2</h1></div>
+        <div id="one"><h1>1</h1></div>
+        <div id="results">
+          <span class="message" id="winner">You Win!</span>
+          <span class="message" id="loser">You Lose!</span>
+          <span class="message" id="draw">It's a draw!</span>
+        </div>
+      </div>
+      <button id="playAgain" class="hidden">Play Again?</button>
+
+      <div id="stats" class="hidden">
+        <h6 id="statsUsername"><strong>Player: </strong></h6>
+        <div id="stats1">
+          <span id="stats1GamesPlayed"><strong>Games Played: </strong></span>
+          <span id="stats1Score"><strong>Score: </strong></span>
+        </div>
+        <div id="stats2">
+          <span id="stats2GamesWon"><strong>Games Won: </strong></span>
+          <span id="stats2GamesLost">G:</span>
+        </div>
+      </div>
+      
+      <button id="reset" class="hidden">reset</button>
+      
+    </div>
+    
+  </main>
+  <footer>
+    Coded by James Bowler &copy; 2020
+  </footer>
+
+  <script src="./script.js"></script>
+</body>
+</html>
